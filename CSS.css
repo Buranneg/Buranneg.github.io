@@ -1,0 +1,71 @@
+body {
+    text-align: center;
+    background-color: black;
+    background: linear-gradient(rgba(2,0,36,1) 0%, rgba(22,0,65,1) 35%, rgba(63,0,62,1) 100%);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 32;
+    line-height: 10px;
+}
+
+.gradientgray {
+
+    background: -webkit-linear-gradient(#eee, #555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradientpurple {
+    background: -webkit-linear-gradient(rgba(184,135,254,1) 27%, rgba(219,119,252,1) 73%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+img {
+    animation-name: slideInLeftImage;
+    animation-duration: 2s;
+
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+
+}
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-20%);
+      opacity: 10%;
+    }
+    100% {
+        opacity: 100%;
+      transform: translateX(0);
+    }
+}
+
+    @keyframes slideInLeftImage {
+        0% {
+            opacity: 0%;
+        }
+        50% {
+          transform: translateX(-20%);
+          opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+          transform: translateX(0);
+        }
+  }
+.smol {
+    font-size: 13;
+}
+
+p {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+}
