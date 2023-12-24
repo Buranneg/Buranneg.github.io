@@ -4,9 +4,8 @@ body {
     background: linear-gradient(rgba(2,0,36,1) 0%, rgba(22,0,65,1) 35%, rgba(63,0,62,1) 100%);
     font-family: 'Courier New', Courier, monospace;
     color: white;
-    font-size: 48;
-    line-height: 10px;
-    background-height: 800px;
+    font-size: 40;
+    background-size: 800px;
 }
 
 .gradientgray {
@@ -97,16 +96,17 @@ p {
 }
 
 .bottom {
+
+
+    height: 60px;
+    width: 300px;
     animation-name: Bottom;
     animation-duration: 4s;
     position: fixed;
-    bottom: 0px;
+    bottom: 20px;
     font-size: 30;
-    background-image: url();
-    height: 30px;
     color: black;
-    background-color: black;
-    background-image: linear-gradient(#2C2C2C,#0A0707 );
-    height: 36px;
-    width: 525px;
+    background-blend-mode: darken;
+
 }
+
