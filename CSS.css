@@ -4,109 +4,116 @@ body {
     background: linear-gradient(rgba(2,0,36,1) 0%, rgba(22,0,65,1) 35%, rgba(63,0,62,1) 100%);
     font-family: 'Courier New', Courier, monospace;
     color: white;
-    font-size: 40;
-    background-size: 800px;
+    font-size: 35;
+    background-size: 1000px;
+    height: 110%;
+    word-spacing: 10%;
+    line-height: 90%;
+    height: auto; 
 }
-
 .gradientgray {
 
-    background: -webkit-linear-gradient(#eee, #555);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#eee, #555);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .gradientpurple {
-    background: -webkit-linear-gradient(rgba(184,135,254,1) 27%, rgba(219,119,252,1) 73%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+  background: -webkit-linear-gradient(rgba(184,135,254,1) 27%, rgba(219,119,252,1) 73%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .gradientblue {
-  background: linear-gradient(rgba(2,0,36,1) 0%, rgba(40,55,255,1) 11%, rgba(0,212,255,1) 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+background: linear-gradient(rgba(2,0,36,1) 0%, rgba(40,55,255,1) 11%, rgba(0,212,255,1) 100%);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
 }
 
 .gradientorange {
-  background: linear-gradient(rgba(230,92,0,1) 0%, rgba(191,45,0,1) 19%, rgba(255,111,0,1) 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+background: linear-gradient(rgba(230,92,0,1) 0%, rgba(191,45,0,1) 19%, rgba(255,111,0,1) 100%);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
 }
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 img {
-    animation-name: slideInLeftImage;
-    animation-duration: 2s;
+  animation-name: slideInLeftImage;
+  animation-duration: 2s;
+  max-width: 100%; 
+  height: auto;
+
 
 }
 
 .img {
-  border: 1px solid;
-  padding: 15x;
-  box-shadow: 7px 15px;
+border: 1px solid;
+padding: 15x;
+box-shadow: 7px 15px;
+max-width: 100%
 }
 
 @keyframes slideInLeft {
-    0% {
-      transform: translateX(-20%);
-      opacity: 10%;
-    }
-    100% {
-        opacity: 100%;
-      transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-20%);
+    opacity: 10%;
+  }
+  100% {
+      opacity: 100%;
+    transform: translateX(0);
+  }
 }
 
-    @keyframes slideInLeftImage {
-        0% {
-            opacity: 0%;
-        }
-        50% {
-          transform: translateX(-20%);
+  @keyframes slideInLeftImage {
+      0% {
           opacity: 0%;
-        }
-        100% {
-            opacity: 100%;
-          transform: translateX(0);
-        }
-  }
+      }
+      50% {
+        transform: translateX(-20%);
+        opacity: 0%;
+      }
+      100% {
+          opacity: 100%;
+        transform: translateX(0);
+      }
+}
 .smol {
-    font-size: 2;
+  font-size: 2;
 }
 
 p {
-    animation-name: slideInLeft;
-    animation-duration: 1s;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
 }
 
 
 @keyframes Bottom {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
+0% {
+  opacity: 0%;
+}
+100% {
+  opacity: 100%;
+}
 
 }
 
 .bottom {
 
 
-    height: 60px;
-    width: 300px;
-    animation-name: Bottom;
-    animation-duration: 4s;
-    position: fixed;
-    bottom: 20px;
-    font-size: 30;
-    color: black;
-    background-blend-mode: darken;
+  height: 60px;
+  width: 300px;
+  animation-name: Bottom;
+  animation-duration: 4s;
+  position: fixed;
+  bottom: 20px;
+  font-size: 30;
+  color: black;
+  background-blend-mode: darken;
 
 }
 
