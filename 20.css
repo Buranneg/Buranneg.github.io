@@ -1,33 +1,46 @@
 p {
     font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    font-size: 14px;
+    font-size: 1.1vw;
     text-align: left;
     color: #bbbbbb;
     line-height: 1px;
+    text-wrap: balance;
+
   }
   br {
     line-height: 1px;
+  }
+  a {
+    color: #bbbbbb;
+    font-style: normal;
+    text-decoration-line: none;
   }
   input {
     border: none;
     background-color: #000000;
     color: #bbbbbb;
     font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    font-size: 14px;
+    font-size: 1.1vw;
     padding: 2px;
     min-width: 1ch;
     width: 20ch;
     max-width: 72ch;
   }
   body {
+    line-break: balance;
     background-color: black;
   }
-   div {
+   div { 
+    display: table;
+    overflow: hidden;
     margin: auto;
     width: 60%;
     border: 2px solid #949494;
     padding: 10px;
     max-width: 1000px;
+    min-width: 10%;
+    max-width: 100%;
+    word-break: wrap;
    }
 
    .cursor {
@@ -61,4 +74,49 @@ p {
   ::selection {
     color: #000000;
     background: #FFFFFF;
+  }
+
+
+  .animation{
+    animation-timing-function: steps(1, end);
+    animation-name: fadeout;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+  @keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes fadeout {
+    0% {
+      -webkit-transform: scale(1);
+      opacity: 1; 
+    }
+    50% {
+      -webkit-transform: scale(0.5);
+      opacity: 0.5;
+
+      bottom: 0%;
+    }
+    100% {
+      -webkit-transform: scale(0);
+      opacity: 0.0;
+      bottom: 50%;
+
+    }
   }
