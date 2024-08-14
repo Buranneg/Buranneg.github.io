@@ -27,45 +27,45 @@ Serves as a website for contact information.">
         <link rel="stylesheet" href="20.css">
     </head>
     <body>
-        <div>
-        <p>
-        Bonkosoft Walls [Version 10.0.2462.2024]</p>
-        <p>
-        © (Bonkosoft Corporation). All rights are reserved.
-        </p>
-        <br>
-        <p>
-            C:\Users\Bonk>Rework of the Website is in progress. </p>
-            <p>
-             "Rework" is not internal or
-            </p>
-            <p>
-            external
-            command, executable program, or batch file.</p>
+          <div>
+            <p>Bonkosoft Walls [Version 10.0.2462.2024]</p>
+            <p>© (Bonkosoft Corporation). All rights are reserved.</p>
+            <p>We recommend to use the CMD without any zoom. (Or Flipped phone)</p>
+            <br>
+            <p>C:\Users\Bonk>Rework of the Website is in progress. </p>
+            <p>"Rework" is not internal or</p>
+            <p>external command, executable program, or batch file.</p>
             <br>
             <p>
-                C:\Users\Bonk>If you want to access the old version, visit buranneg.github.io/old.html </p>
-                <p>
-                 "If" is not internal or
-                </p>
-                <p>
-                external
-                command, executable program, or batch file.</p>
-                <br>
+                C:\Users\Bonk>Old version > <a data-href="https://buranneg.github.io/old.html" class="navPills">buranneg.github.io/old.html</a>
+            </p>
+            <p>"Old" is not internal or</p>
+            <p>external command, executable program, or batch file.</p>
+            <br>
             <p>
-                C:\Users\Bonk>But if you came to see my works, visit https://x.com/CatwellMelice  </p>
-                <p>
-                 "If" is not internal or
-                </p>
-                <p>
-                external
-                command, executable program, or batch file.</p>
-                <br>
-            <p>C:\Users\Bonk><input value="This is Interactable" id="myInput" onkeydown="this.style.width =  
-                (this.value.length + 1) + 'ch';"
-            id="input" maxlength="72" /><p1 class="cursor">▂</p1></p>
+                C:\Users\Bonk>But if you came to see my works, visit <a data-href="https://x.com/CatwellMelice" class="navPills">https://x.com/CatwellMelice</a>
+            </p>
+            <p>"If" is not internal or</p>
+            <p>external command, executable program, or batch file.</p>
+            <br>
+            <p>
+                C:\Users\Bonk><input value="This is Interactable" id="myInput" onkeydown="this.style.width = (this.value.length + 1.1) + 'ch';" maxlength="72"/><p1 class="cursor">▂</p1>
+            </p>
             <br>
         </div>
-            
+
+        <script>
+            // Script for handling data-href clicks
+            var Body = document.querySelector("body");
+            document.querySelectorAll('[data-href]').forEach(element => {
+                element.addEventListener('click', () => {
+                    Body.classList.add('animation');
+                    element.offsetHeight; // Force reflow to ensure the animation starts
+                    const link = element.dataset.href;
+                    setTimeout(() => location.assign(link), 1200); // Adjust the delay if needed
+                });
+            });
+        </script>
     </body>
 </html>
+
