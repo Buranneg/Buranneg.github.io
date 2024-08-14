@@ -1,0 +1,64 @@
+p {
+    font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: 14px;
+    text-align: left;
+    color: #bbbbbb;
+    line-height: 1px;
+  }
+  br {
+    line-height: 1px;
+  }
+  input {
+    border: none;
+    background-color: #000000;
+    color: #bbbbbb;
+    font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: 14px;
+    padding: 2px;
+    min-width: 1ch;
+    width: 20ch;
+    max-width: 50ch;
+  }
+  body {
+    background-color: black;
+  }
+   div {
+    margin: auto;
+    width: 60%;
+    border: 2px solid #949494;
+    padding: 10px;
+    max-width: 1000px;
+   }
+
+   .cursor {
+    animation-timing-function: steps(1, end);
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-name: cursor;
+   }
+
+@keyframes cursor{
+    0% {
+      opacity: 100%;
+    }
+  
+    50% {
+      opacity: 0%
+    }
+  }
+  
+
+  *:focus {
+    outline: none;
+    caret-color: transparent;
+}
+
+  ::-moz-selection { /* Code for Firefox */
+    color: #000000;
+    background: #FFFFFF;
+  }
+  
+  ::selection {
+    color: #000000;
+    background: #FFFFFF;
+  }
